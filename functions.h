@@ -75,7 +75,7 @@ public:
     Node *getEnd();  //Get end
     void printQueue(); // display
     int peek();  // for getting top Data
-    
+    void clear();  // to clear Queue
  
     ~Queue() {   //destructor
         Node* current = top;

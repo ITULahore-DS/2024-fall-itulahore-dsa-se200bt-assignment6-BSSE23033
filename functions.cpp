@@ -158,6 +158,17 @@ int Queue::peek() {
     if(top == nullptr){
         return -1;
     }
-    
+
     return top->getData();
+}
+
+void Queue::clear() {  // to clear queue
+    if (top == nullptr && count == 0) {
+        cout << "Queue is already empty can't clear" << endl;
+        return;
+    }    
+    while (isEmpty() != true) {
+            dequeue();
+    }
+    cout << "Queue Cleared!" << endl;
 }
