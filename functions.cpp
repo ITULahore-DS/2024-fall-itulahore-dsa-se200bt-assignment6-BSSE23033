@@ -153,3 +153,11 @@ void Queue :: printQueue() { // display
         temp = temp->getNext();
     }
 }
+
+int Queue::peek() {
+    if(top == nullptr){
+        return -1;
+    }
+    
+    return top->getData();
+}

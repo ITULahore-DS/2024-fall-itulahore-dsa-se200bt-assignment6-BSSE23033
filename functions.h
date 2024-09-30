@@ -71,9 +71,11 @@ public:
     void enqueue(int data); // to append
     void dequeue();    // to remove from start
     int size();    // getter
-    Node *getTop();
-    Node *getEnd();
+    Node *getTop();  //get Top
+    Node *getEnd();  //Get end
     void printQueue(); // display
+    int peek();  // for getting top Data
+    
  
     ~Queue() {   //destructor
         Node* current = top;
